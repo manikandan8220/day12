@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        
+        //1,create and access
+
+        let obj={
+            tittle:"the perfect",
+            author:"cecelia ahern",
+            year:2013,
+            }
+              console.log(obj);
+              
+        //2, add
+
+
+          let Objectname={
+            Age:35,
+            year:2015,
+          }
+          Objectname.tittle="the boundry",
+          Objectname.author="edith wharton",
+          console.log(Objectname);
+
+          
+          //3,Destructuring
+
+
+            const person={
+                tittle:"blood's rover",
+                year:2010,
+            }
+            const{tittle,year}=person;
+            console.log(person);
+
+
+           //4,object spread
+               
+
+            let book={
+            tittle:"the zombie room",
+            year:2020,
+            author:"r.d.ronald",
+           }
+            let author={
+                name:"the willam back",
+                nationality:"france",
+                birth:1985,
+            }
+             let bookwithauthor={
+                   ...book,
+                   ... author,
+             };
+             console.log(bookwithauthor);
+             
+
+           //5,iterate propertie
+
+
+
+           const objname={
+              firstname:"mani",
+              city:"salem",
+              phone:9876543210, 
+           }
+            for(let property in objname){
+                console.log(`${objname[property]}`);
+                
+            }
+            
+    </script>
+</body>
+</html>
